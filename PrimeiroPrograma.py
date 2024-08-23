@@ -6,7 +6,7 @@ def somar(a, b):
 print("Olá, Usuário!")
 
 # perguntar e printar o nome do usuário
-name = (input("Qual é o seu nome? "))
+name = input("Qual é o seu nome? ")
 name = name.strip().title()
 print("Prazer em te conhecer", name)
 
