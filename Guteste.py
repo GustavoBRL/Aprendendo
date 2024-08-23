@@ -2,18 +2,23 @@
 def somar(a, b):
     return a+b
 
-# a soma dos dois valores dentro da função definida = resultado
-resultado = somar(5, 5)
-
 # printar olá!
-print("Hello, User!")
+print("Olá, Usuário!")
 
 # perguntar e printar o nome do usuário
-name = input("What's your name? ")
-print("Nice to meet you,", name)
+name = (input("Qual é o seu nome? "))
+name = name.strip().title()
+if str() in name:
+    print("Prazer em te conhecer", name)
+else:
+    print("Desculpe, não entendi o seu nome")
+
+# perguntar qual o valor para a soma, e formatá-lo
+b = int(input("Qual o primeiro valor para a soma? "))
+c = int(input("Qual o segundo valor para a soma? "))
+
+# a soma dos dois valores dentro da função definida = resultado
+resultado = somar(b, c)
 
 # printar o resultado da soma
-print("Agora, o resultado da soma que vc pensou é: ", resultado)
-# não é obrigatório atribuir a função com seu valor à uma variável 
-# (resultado), poderia se referir à função como ela está (somar(5, 5))
-# mas é melhor assim
+print("O resultado da soma é: ", resultado)
